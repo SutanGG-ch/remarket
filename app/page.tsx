@@ -160,7 +160,10 @@ function ProductCard({
 
         <button
           type="button"
-          onClick={() => onAddToCart(product.id, currentPrice)}
+          onClick={() => {
+  alert("button works");
+  onAddToCart(product.id, currentPrice);
+}}
           disabled={product.quantity === 0}
           className="mt-auto flex w-full items-center justify-center gap-2 rounded-xl bg-emerald-600 px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-700 disabled:cursor-not-allowed disabled:bg-slate-300"
         >
